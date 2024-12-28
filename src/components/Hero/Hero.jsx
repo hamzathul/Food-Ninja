@@ -27,7 +27,7 @@ const Hero = () => {
             </button>
           </div>
           {/* image section  */}
-          <div className="relative z-30 order-1 sm:order-2">
+          <div className="z-30 order-1 sm:order-2">
             <img
               src="https://restaurant-tcj.netlify.app/assets/hero-BCogpiE1.png"
               alt=""
