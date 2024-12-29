@@ -1,11 +1,6 @@
 import React from "react";
 import PrimaryButton from "../Shared/PrimaryButton";
 
-//  Leaf from "https://restaurant-tcj.netlify.app/assets/leaf-C1v4Wmxv.png";
-//  Tomato from "https://restaurant-tcj.netlify.app/assets/tomato-BArVx_-y.png";
-//  Lemon from "https://restaurant-tcj.netlify.app/assets/lemon-B-yhuoNo.png";
-//  Apple from "https://restaurant-tcj.netlify.app/assets/apple-B3cOfIDT.png";
-//  Kiwi from "https://restaurant-tcj.netlify.app/assets/kiwi-Do64hCSg.png";
 
 const Banner = () => {
   return (
