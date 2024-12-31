@@ -3,11 +3,11 @@ import PrimaryButton from "../Shared/PrimaryButton";
 
 const BgStyle = {
   backgroundImage: `url('https://restaurant-tcj.netlify.app/assets/heroBg-Ce9qioFl.png')`,
-  backgroundRepeat:'no-repeat',
-  backgroundPosition:'center',
-  backgroundSize:'cover',
-  width:'100%',
-  height:'100%'
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  width: "100%",
+  height: "100%",
 };
 
 const Hero = () => {
@@ -17,17 +17,23 @@ const Hero = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]">
           {/* text content section  */}
           <div className="space-y-7 text-dark order-2 sm:order-1">
-            <h1 className="text-5xl ">
-              Fresh and healthy Meal Plan <span className="text-secondary font-cursive text-7xl">Delivery</span> in Miami
+            <h1 data-aos="fade-up" className="text-5xl ">
+              Fresh and healthy Meal Plan{" "}
+              <span className="text-secondary font-cursive text-7xl">
+                Delivery
+              </span>{" "}
+              in Miami
             </h1>
-            <p className="lg:pr-64">Delicious meals delivered to your door from $132 per week</p>
+            <p data-aos="fade-up" data-aos-delay="300" className="lg:pr-64">
+              Delicious meals delivered to your door from $132 per week
+            </p>
             {/* button section  */}
-            <button>
-                <PrimaryButton/>
-            </button>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <PrimaryButton />
+            </div>
           </div>
           {/* image section  */}
-          <div className="z-30 order-1 sm:order-2">
+          <div data-aos='zoom-in' data-aos-delay='500' className="z-30 order-1 sm:order-2">
             <img
               src="https://restaurant-tcj.netlify.app/assets/hero-BCogpiE1.png"
               alt=""

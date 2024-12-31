@@ -37,10 +37,10 @@ const DropdownLinks = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ handlePopup }) => {
   return (
     <>
-      <div className="bg-white shadow-md">
+      <div data-aos="fade" className="bg-white shadow-md">
         <div className="container flex justify-between py-4 sm:py-3">
           {/* logo section  */}
           <div className="font-bold text-3xl">LOGO</div>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <li key={id}>
                   <a
                     href={link}
-                    className="inline-block text-xl hover:text-primary font-semibold"
+                    className="hidden lg:inline-block text-xl hover:text-primary font-semibold"
                   >
                     {name}
                   </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
               <li className="group">
                 <a
                   href=""
-                  className="inline-block text-xl hover:text-primary font-semibold"
+                  className="hidden lg:inline-block text-xl hover:text-primary font-semibold"
                 >
                   <div className="flex items-center gap-[2px] py-2">
                     Drop down
@@ -88,7 +88,10 @@ const Navbar = () => {
               </li>
               {/* Login button section  */}
               <li>
-                <button className="flex justify-center items-center gap-2 bg-secondary text-xl h-[40px] text-white px-5 py-2 hover:scale-105 duration-300">
+                <button
+                  className="flex justify-center items-center gap-2 bg-secondary text-xl h-[40px] text-white px-2 md:px-5 py-2 hover:scale-105 duration-300"
+                  onClick={handlePopup}
+                >
                   <FaUser />
                   My Account
                 </button>

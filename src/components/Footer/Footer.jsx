@@ -7,7 +7,10 @@ const Footer = () => {
   return (
     <>
       <div className="text-white mt-20">
-        <div className="container bg-gradient-to-b from-primary to-primaryDark rounded-t-3xl">
+        <div
+          data-aos="fade-down"
+          className="container bg-gradient-to-b from-primary to-primaryDark rounded-t-3xl"
+        >
           {/* heading section  */}
           <h1 className="py-10 text-3xl font-bold text-center">Contact Us</h1>
           {/* grid section  */}
